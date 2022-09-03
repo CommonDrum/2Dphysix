@@ -1,5 +1,5 @@
-#include "Classes//MyOpenGLRenderer.h"
-#include "Test/ArraySorting.h"
+#include "src/Test/ArraySorting.h"
+#include "src/Classes/MyOpenGLRenderer.h"
 
 
 int main()
@@ -8,8 +8,8 @@ int main()
 
     /* INITIALIZATION */
 
-    // Starter class used to hide OpenGL boilerplate and decrease ammount of code in Main.cpp
-    // Default size is changable
+    // Starter class used to hide OpenGL boilerplate and decrease amount of code in Main.cpp
+    // Default size is changeable
     Starter starter("MyWindow");
     Shader shader("C:/Users/Karol/source/repos/Glad Test/Glad Test/src/Shaders/default.vert", "C:/Users/Karol/source/repos/Glad Test/Glad Test/src/Shaders/default.frag");
     ImGuiInterface GuiInterface(starter.window);
@@ -18,7 +18,7 @@ int main()
 
 
     /* APPLICATION SPECIFIC CODE */
-    // (maybe move some of the initialization stuff here as someone might want to specifi shaders, GUI, etc.)
+    // (maybe move some initialization stuff here as someone might want to specific shaders, GUI, etc.)
     ArraySorting sorter(1000);
 
 

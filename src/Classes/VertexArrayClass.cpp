@@ -1,6 +1,4 @@
 #pragma once
-#include "VertexArrayClass.h"
-
 // Constructor that generates a VertexArray ID
 VertexArray::VertexArray()
 {
@@ -24,6 +22,8 @@ void VertexArray::LinkVertexBuffer( VertexBuffer& vb, const VertexBufferLayout& 
 
 	vb.Unbind();
 }
+
+#include "VertexArrayClass.h"
 
 // Binds the VertexArray
 void VertexArray::Bind()

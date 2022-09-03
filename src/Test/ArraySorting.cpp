@@ -1,5 +1,6 @@
 #include "ArraySorting.h"
 
+
 ArraySorting::ArraySorting(int count)
 {
 	p_count = count;
@@ -13,10 +14,10 @@ ArraySorting::ArraySorting(int count)
 	CreateVertices();
 	CreateIndicies();
 
-	// Cordinates
-	p_layout.Push<float>(3);
+	// Coordinates
+	p_layout->Push<float>(3);
 	// Color
-	p_layout.Push<float>(3);
+	p_layout->Push<float>(3);
 
 }
 
@@ -105,7 +106,7 @@ void* ArraySorting::getIndicies()
 	return p_indicies.data();
 }
 
-VertexBufferLayout ArraySorting::getLayout()
+VertexBufferLayout* ArraySorting::getLayout()
 {
 	return p_layout;
 }

@@ -1,9 +1,10 @@
 #pragma once
+#include "VertexBufferLayoutClass.h"
 #include <vector>
 #include <array>
 #include <stdlib.h>
 #include <time.h>
-#include "../Classes/VertexBufferLayoutClass.h"
+
 
 struct Vec3
 {
@@ -56,7 +57,7 @@ public:
 	void* getIndicies();
 	 int getIBsize();
 	 int getVBsize();
-	 VertexBufferLayout getLayout();
+	 VertexBufferLayout* getLayout();
 
 
 
@@ -65,7 +66,7 @@ private:
 	std::vector<Vertex> p_vertices;
 	std::vector<int> p_indicies;
 	std::vector<float> p_array;
-	VertexBufferLayout p_layout;
+	VertexBufferLayout* p_layout = new VertexBufferLayout;
 
 	float p_padding = 100.0f;
 	int p_count;

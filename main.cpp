@@ -23,7 +23,7 @@ int main()
 
 
 
-    renderer.SetVBLayout(sorter.getLayout());
+    renderer.SetVBLayout(*sorter.getLayout());
 
     int* list = (int*)sorter.getIndicies();
 

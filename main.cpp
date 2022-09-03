@@ -1,5 +1,5 @@
 #include "src/Test/ArraySorting.h"
-#include "src/Classes/MyOpenGLRenderer.h"
+#include "MyOpenGLRenderer.h"
 
 
 int main()

@@ -11,6 +11,7 @@
 #include "VertexBufferLayoutClass.h"
 #include "Renderer.h"
 #include "AbstractImGui.h"
+#include "spdlog/spdlog.h"
 
 
 

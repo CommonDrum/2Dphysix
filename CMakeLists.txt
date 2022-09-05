@@ -40,6 +40,7 @@ add_executable(2DPhysix
         Dependencies/imgui/backends/imgui_impl_opengl3.cpp
         src/Test/ArraySorting.h
         src/Test/ArraySorting.cpp
+        src/Classes/Events/Event.h
         )
 
 
@@ -50,6 +51,7 @@ target_include_directories(2DPhysix PRIVATE src/Classes
         src/Classes
         Dependencies
         Dependencies/imgui
+        Dependencies/spdlog/include
         )
 
 target_link_libraries(${PROJECT_NAME} glfw)

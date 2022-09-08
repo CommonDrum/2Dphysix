@@ -41,8 +41,8 @@ add_executable(2DPhysix
         Dependencies/imgui/backends/imgui_impl_opengl3.cpp
         src/Test/ArraySorting.h
         src/Test/ArraySorting.cpp
-        src/Classes/Events/Event.h
-        )
+        src/Events/Event.h
+        src/Events/ApplicationEvent.h)
 
 
 target_include_directories(2DPhysix PRIVATE src/Classes

@@ -16,22 +16,22 @@ add_subdirectory(Dependencies/glfw
 add_executable(2DPhysix
         main.cpp
         glad.c
-        src/Classes/AbstractImGui.cpp
-        src/Classes/IndexBufferClass.cpp
-        src/Classes/Renderer.cpp
-        src/Classes/ShaderClass.cpp
-        src/Classes/Starter.cpp
-        src/Classes/VertexArrayClass.cpp
-        src/Classes/VertexBufferClass.cpp
-        src/Classes/VertexBufferLayoutClass.cpp
-        src/Classes/AbstractImGui.h
-        src/Classes/IndexBufferClass.h
-        src/Classes/Renderer.h
-        src/Classes/ShaderClass.h
-        src/Classes/Starter.h
-        src/Classes/VertexArrayClass.h
-        src/Classes/VertexBufferClass.h
-        src/Classes/VertexBufferLayoutClass.h
+        src/Renderer/AbstractImGui.cpp
+        src/Renderer/IndexBufferClass.cpp
+        src/Renderer/Renderer.cpp
+        src/Renderer/ShaderClass.cpp
+        src/Renderer/Starter.cpp
+        src/Renderer/VertexArrayClass.cpp
+        src/Renderer/VertexBufferClass.cpp
+        src/Renderer/VertexBufferLayoutClass.cpp
+        src/Renderer/AbstractImGui.h
+        src/Renderer/IndexBufferClass.h
+        src/Renderer/Renderer.h
+        src/Renderer/ShaderClass.h
+        src/Renderer/Starter.h
+        src/Renderer/VertexArrayClass.h
+        src/Renderer/VertexBufferClass.h
+        src/Renderer/VertexBufferLayoutClass.h
         Dependencies/imgui/imgui.cpp
         Dependencies/imgui/imgui_demo.cpp
         Dependencies/imgui/imgui_draw.cpp
@@ -42,14 +42,14 @@ add_executable(2DPhysix
         src/Test/ArraySorting.h
         src/Test/ArraySorting.cpp
         src/Events/Event.h
-        src/Events/ApplicationEvent.h)
+        src/Events/ApplicationEvent.h src/Events/KeyEvent.h src/Events/MouseEvent.h)
 
 
-target_include_directories(2DPhysix PRIVATE src/Classes
+target_include_directories(2DPhysix PRIVATE src/Renderer
         Dependencies/glfw
         Dependencies/include
         src/Vendor
-        src/Classes
+        src/Renderer
         Dependencies
         Dependencies/imgui
         Dependencies/spdlog/include

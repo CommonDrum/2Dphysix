@@ -11,7 +11,7 @@
 #define DEFAULT_WIDTH 800.0f
 #define DEFAULT_HIGHT 800.0f
 
-class Starter
+class Starter // This class is cutting GLFW boilerplate and automates the deletion of data when program ends
 {
 public:
 	Starter(std::string title, int sizeX = DEFAULT_WIDTH, int sizeY = DEFAULT_HIGHT);

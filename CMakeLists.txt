@@ -42,7 +42,7 @@ add_executable(2DPhysix
         src/Test/ArraySorting.h
         src/Test/ArraySorting.cpp
         src/Events/Event.h
-        src/Events/ApplicationEvent.h src/Events/KeyEvent.h src/Events/MouseEvent.h)
+        src/Events/ApplicationEvent.h src/Events/KeyEvent.h src/Events/MouseEvent.h src/Core/Core.h)
 
 
 target_include_directories(2DPhysix PRIVATE src/Renderer
